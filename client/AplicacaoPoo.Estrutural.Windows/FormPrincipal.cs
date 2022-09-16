@@ -7,9 +7,10 @@ namespace AplicacaoPoo.Estrutural.Windows
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnConversor_Click(object sender, EventArgs e)
         {
-
+            var form = new CotacaoDolar();
+            form.Show();
         }
     }
 }
