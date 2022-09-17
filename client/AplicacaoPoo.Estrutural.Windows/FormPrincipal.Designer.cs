@@ -34,33 +34,35 @@
             // 
             // btnConversor
             // 
-            this.btnConversor.Location = new System.Drawing.Point(40, 51);
+            this.btnConversor.FlatAppearance.BorderSize = 0;
+            this.btnConversor.Location = new System.Drawing.Point(32, 45);
             this.btnConversor.Name = "btnConversor";
-            this.btnConversor.Size = new System.Drawing.Size(145, 39);
+            this.btnConversor.Size = new System.Drawing.Size(167, 34);
             this.btnConversor.TabIndex = 0;
-            this.btnConversor.Text = "Conversor";
+            this.btnConversor.Text = "Conversor de dolar";
+            this.btnConversor.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnConversor.UseVisualStyleBackColor = true;
             this.btnConversor.Click += new System.EventHandler(this.btnConversor_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(255, 51);
+            this.button2.Location = new System.Drawing.Point(255, 45);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 39);
+            this.button2.Size = new System.Drawing.Size(145, 34);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "Controle de Venda";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(449, 147);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(462, 111);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnConversor);
             this.Name = "FormPrincipal";
-            this.Text = "FormPrincipal";
+            this.Text = " ";
             this.ResumeLayout(false);
 
         }

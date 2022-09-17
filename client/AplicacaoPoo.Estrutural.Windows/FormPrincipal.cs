@@ -9,7 +9,7 @@ namespace AplicacaoPoo.Estrutural.Windows
 
         private void btnConversor_Click(object sender, EventArgs e)
         {
-            var form = new CotacaoDolar();
+            var form = new frmCotacaoDolar();
             form.Show();
         }
     }
