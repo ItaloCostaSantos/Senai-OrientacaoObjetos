@@ -10,25 +10,23 @@ using System.Windows.Forms;
 
 namespace AplicacaoPoo.Estrutural.Windows
 {
-    public partial class frmCotacaoDolar : Form
+    public partial class frmComissao : Form
     {
-        
-        public frmCotacaoDolar()
+        public frmComissao()
         {
             InitializeComponent();
         }
 
-        private void btnConverter_Click(object sender, EventArgs e)
+        private void btnCalcularComissao_Click(object sender, EventArgs e)
         {
-            var valorAtualDolar = double.Parse(txtValorAtual.Text);
-            var valorEmDolar = double.Parse(txtValorEmDolar.Text);
-
-            double resultado = valorEmDolar * valorAtualDolar;
-
-            MessageBox.Show($"Valor em Real: {resultado.ToString("C")}");
+            var precoUnit = decimal.Parse(txtPrecoUnitPeca.Text);
+            var quantidadeVendida = decimal.Parse(txtQuantVendaPeca.Text);
+            var valorQuantidade = precoUnit * quantidadeVendida;
+            var valorComissao = (5 * valorQuantidade) / 100;
+            lblValorComissao.Text = valorComissao.ToString("C");
         }
 
-        private void txtValorAtual_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtPrecoUnitPeca_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
             {

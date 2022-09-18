@@ -12,5 +12,11 @@ namespace AplicacaoPoo.Estrutural.Windows
             var form = new frmCotacaoDolar();
             form.Show();
         }
+
+        private void btnComissao_Click(object sender, EventArgs e)
+        {
+            var form = new frmComissao();
+            form.Show();
+        }
     }
 }
