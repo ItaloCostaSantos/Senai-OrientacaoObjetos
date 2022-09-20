@@ -12,7 +12,8 @@ namespace AplicacaoPoo.Estrutural.Windows
 {
     public partial class frmCotacaoDolar : Form
     {
-        
+        private bool CotacaoEhValido;
+        private bool ValorEmDolarEhValido;
         public frmCotacaoDolar()
         {
             InitializeComponent();
@@ -25,7 +26,6 @@ namespace AplicacaoPoo.Estrutural.Windows
             var valorEmDolar = decimal.Parse(txtValorEmDolar.Text);
 
             var resultado = valorEmDolar * valorAtualDolar;
-
             MessageBox.Show($"Valor em Reais: {resultado.ToString("C")}");
         }
 
@@ -48,12 +48,19 @@ namespace AplicacaoPoo.Estrutural.Windows
             try
             {
                 var resultado = decimal.Parse(txtValorAtual.Text);
+                CotacaoEhValido = true;
+                if(ValorEmDolarEhValido && CotacaoEhValido)
+                {
+                    btnConverter.Enabled = true;
+                }
             }
             catch (Exception)
             {
                 MessageBox.Show("A cotação do dolar é um valor decimal");
                 txtValorAtual.Focus();
-                throw;
+                ValorEmDolarEhValido = false;
+                btnConverter.Enabled = false;
+                
             }
         }
 
@@ -62,12 +69,18 @@ namespace AplicacaoPoo.Estrutural.Windows
             try
             {
                 var resultado = decimal.Parse(txtValorEmDolar.Text);
+                ValorEmDolarEhValido = true;
+                if (ValorEmDolarEhValido && CotacaoEhValido)
+                {
+                    btnConverter.Enabled = true;
+                }
             }
             catch (Exception)
             {
                 MessageBox.Show("A cotação do dolar é um valor decimal");
                 txtValorEmDolar.Focus();
-                throw;
+                ValorEmDolarEhValido = false;
+                btnConverter.Enabled = false;
             }
         }
     }
