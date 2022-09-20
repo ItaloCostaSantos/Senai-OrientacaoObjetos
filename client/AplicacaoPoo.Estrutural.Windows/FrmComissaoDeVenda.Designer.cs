@@ -1,6 +1,6 @@
 ﻿namespace AplicacaoPoo.Estrutural.Windows
 {
-    partial class frmComissao
+    partial class FrmComissaoDeVenda
     {
         /// <summary>
         /// Required designer variable.
@@ -48,18 +48,18 @@
             this.lblIdVendedor.AutoSize = true;
             this.lblIdVendedor.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblIdVendedor.ForeColor = System.Drawing.Color.White;
-            this.lblIdVendedor.Location = new System.Drawing.Point(12, 15);
+            this.lblIdVendedor.Location = new System.Drawing.Point(12, 13);
             this.lblIdVendedor.Name = "lblIdVendedor";
-            this.lblIdVendedor.Size = new System.Drawing.Size(136, 22);
+            this.lblIdVendedor.Size = new System.Drawing.Size(123, 19);
             this.lblIdVendedor.TabIndex = 0;
             this.lblIdVendedor.Text = "ID do Vendedor";
             // 
             // txtIdVendedor
             // 
             this.txtIdVendedor.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIdVendedor.Location = new System.Drawing.Point(154, 12);
+            this.txtIdVendedor.Location = new System.Drawing.Point(154, 11);
             this.txtIdVendedor.Name = "txtIdVendedor";
-            this.txtIdVendedor.Size = new System.Drawing.Size(280, 25);
+            this.txtIdVendedor.Size = new System.Drawing.Size(280, 23);
             this.txtIdVendedor.TabIndex = 1;
             // 
             // lblCodigoPeca
@@ -67,24 +67,24 @@
             this.lblCodigoPeca.AutoSize = true;
             this.lblCodigoPeca.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblCodigoPeca.ForeColor = System.Drawing.Color.White;
-            this.lblCodigoPeca.Location = new System.Drawing.Point(6, 39);
+            this.lblCodigoPeca.Location = new System.Drawing.Point(6, 34);
             this.lblCodigoPeca.Name = "lblCodigoPeca";
-            this.lblCodigoPeca.Size = new System.Drawing.Size(67, 22);
+            this.lblCodigoPeca.Size = new System.Drawing.Size(61, 19);
             this.lblCodigoPeca.TabIndex = 2;
             this.lblCodigoPeca.Text = "Código";
             // 
             // txtCodigoPeca
             // 
-            this.txtCodigoPeca.Location = new System.Drawing.Point(207, 36);
+            this.txtCodigoPeca.Location = new System.Drawing.Point(207, 32);
             this.txtCodigoPeca.Name = "txtCodigoPeca";
-            this.txtCodigoPeca.Size = new System.Drawing.Size(200, 29);
+            this.txtCodigoPeca.Size = new System.Drawing.Size(200, 27);
             this.txtCodigoPeca.TabIndex = 3;
             // 
             // txtPrecoUnitPeca
             // 
-            this.txtPrecoUnitPeca.Location = new System.Drawing.Point(207, 81);
+            this.txtPrecoUnitPeca.Location = new System.Drawing.Point(207, 71);
             this.txtPrecoUnitPeca.Name = "txtPrecoUnitPeca";
-            this.txtPrecoUnitPeca.Size = new System.Drawing.Size(200, 29);
+            this.txtPrecoUnitPeca.Size = new System.Drawing.Size(200, 27);
             this.txtPrecoUnitPeca.TabIndex = 5;
             this.txtPrecoUnitPeca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecoUnitPeca_KeyPress);
             // 
@@ -93,9 +93,9 @@
             this.lblPrecoUnitPeca.AutoSize = true;
             this.lblPrecoUnitPeca.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPrecoUnitPeca.ForeColor = System.Drawing.Color.White;
-            this.lblPrecoUnitPeca.Location = new System.Drawing.Point(6, 84);
+            this.lblPrecoUnitPeca.Location = new System.Drawing.Point(6, 74);
             this.lblPrecoUnitPeca.Name = "lblPrecoUnitPeca";
-            this.lblPrecoUnitPeca.Size = new System.Drawing.Size(154, 22);
+            this.lblPrecoUnitPeca.Size = new System.Drawing.Size(140, 19);
             this.lblPrecoUnitPeca.TabIndex = 4;
             this.lblPrecoUnitPeca.Text = "Preço unitário R$";
             // 
@@ -109,18 +109,18 @@
             this.gbxPeca.Controls.Add(this.lblPrecoUnitPeca);
             this.gbxPeca.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gbxPeca.ForeColor = System.Drawing.Color.White;
-            this.gbxPeca.Location = new System.Drawing.Point(12, 62);
+            this.gbxPeca.Location = new System.Drawing.Point(12, 55);
             this.gbxPeca.Name = "gbxPeca";
-            this.gbxPeca.Size = new System.Drawing.Size(422, 174);
+            this.gbxPeca.Size = new System.Drawing.Size(422, 154);
             this.gbxPeca.TabIndex = 6;
             this.gbxPeca.TabStop = false;
             this.gbxPeca.Text = "Peças";
             // 
             // txtQuantVendaPeca
             // 
-            this.txtQuantVendaPeca.Location = new System.Drawing.Point(207, 127);
+            this.txtQuantVendaPeca.Location = new System.Drawing.Point(207, 112);
             this.txtQuantVendaPeca.Name = "txtQuantVendaPeca";
-            this.txtQuantVendaPeca.Size = new System.Drawing.Size(200, 29);
+            this.txtQuantVendaPeca.Size = new System.Drawing.Size(200, 27);
             this.txtQuantVendaPeca.TabIndex = 7;
             // 
             // lblQuantVendaPeca
@@ -128,9 +128,9 @@
             this.lblQuantVendaPeca.AutoSize = true;
             this.lblQuantVendaPeca.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblQuantVendaPeca.ForeColor = System.Drawing.Color.White;
-            this.lblQuantVendaPeca.Location = new System.Drawing.Point(6, 130);
+            this.lblQuantVendaPeca.Location = new System.Drawing.Point(6, 115);
             this.lblQuantVendaPeca.Name = "lblQuantVendaPeca";
-            this.lblQuantVendaPeca.Size = new System.Drawing.Size(176, 22);
+            this.lblQuantVendaPeca.Size = new System.Drawing.Size(160, 19);
             this.lblQuantVendaPeca.TabIndex = 6;
             this.lblQuantVendaPeca.Text = "Quantidade Vendida";
             // 
@@ -140,9 +140,9 @@
             this.btnCalcularComissao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcularComissao.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCalcularComissao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnCalcularComissao.Location = new System.Drawing.Point(12, 258);
+            this.btnCalcularComissao.Location = new System.Drawing.Point(12, 228);
             this.btnCalcularComissao.Name = "btnCalcularComissao";
-            this.btnCalcularComissao.Size = new System.Drawing.Size(109, 39);
+            this.btnCalcularComissao.Size = new System.Drawing.Size(109, 34);
             this.btnCalcularComissao.TabIndex = 7;
             this.btnCalcularComissao.Text = "Calcular";
             this.btnCalcularComissao.UseVisualStyleBackColor = false;
@@ -153,9 +153,9 @@
             this.lblValorComissao.AutoSize = true;
             this.lblValorComissao.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblValorComissao.ForeColor = System.Drawing.Color.Goldenrod;
-            this.lblValorComissao.Location = new System.Drawing.Point(328, 266);
+            this.lblValorComissao.Location = new System.Drawing.Point(320, 235);
             this.lblValorComissao.Name = "lblValorComissao";
-            this.lblValorComissao.Size = new System.Drawing.Size(0, 22);
+            this.lblValorComissao.Size = new System.Drawing.Size(0, 19);
             this.lblValorComissao.TabIndex = 8;
             // 
             // label1
@@ -163,25 +163,25 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label1.Location = new System.Drawing.Point(160, 266);
+            this.label1.Location = new System.Drawing.Point(160, 235);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 22);
+            this.label1.Size = new System.Drawing.Size(154, 19);
             this.label1.TabIndex = 9;
             this.label1.Text = "Valor da comissão:";
             // 
-            // frmComissao
+            // FrmComissaoDeVenda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(448, 309);
+            this.ClientSize = new System.Drawing.Size(448, 273);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblValorComissao);
             this.Controls.Add(this.btnCalcularComissao);
             this.Controls.Add(this.gbxPeca);
             this.Controls.Add(this.txtIdVendedor);
             this.Controls.Add(this.lblIdVendedor);
-            this.Name = "frmComissao";
+            this.Name = "FrmComissaoDeVenda";
             this.Text = "FrmComissao";
             this.gbxPeca.ResumeLayout(false);
             this.gbxPeca.PerformLayout();

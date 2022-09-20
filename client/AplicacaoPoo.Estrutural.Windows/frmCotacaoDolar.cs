@@ -16,19 +16,20 @@ namespace AplicacaoPoo.Estrutural.Windows
         public frmCotacaoDolar()
         {
             InitializeComponent();
+            btnConverter.Enabled = false;
         }
 
         private void btnConverter_Click(object sender, EventArgs e)
         {
-            var valorAtualDolar = double.Parse(txtValorAtual.Text);
-            var valorEmDolar = double.Parse(txtValorEmDolar.Text);
+            var valorAtualDolar = decimal.Parse(txtValorAtual.Text);
+            var valorEmDolar = decimal.Parse(txtValorEmDolar.Text);
 
-            double resultado = valorEmDolar * valorAtualDolar;
+            var resultado = valorEmDolar * valorAtualDolar;
 
-            MessageBox.Show($"Valor em Real: {resultado.ToString("C")}");
+            MessageBox.Show($"Valor em Reais: {resultado.ToString("C")}");
         }
 
-        private void txtValorAtual_KeyPress(object sender, KeyPressEventArgs e)
+        /*private void txtValorAtual_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
             {
@@ -39,6 +40,34 @@ namespace AplicacaoPoo.Estrutural.Windows
             {
                 e.Handled = true;
                 MessageBox.Show("Atenção! Este campo aceita somente uma virgula");
+            }
+        }*/
+
+        private void txtValorAtual_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var resultado = decimal.Parse(txtValorAtual.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("A cotação do dolar é um valor decimal");
+                txtValorAtual.Focus();
+                throw;
+            }
+        }
+
+        private void txtValorEmDolar_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var resultado = decimal.Parse(txtValorEmDolar.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("A cotação do dolar é um valor decimal");
+                txtValorEmDolar.Focus();
+                throw;
             }
         }
     }

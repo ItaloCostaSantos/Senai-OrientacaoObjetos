@@ -1,8 +1,8 @@
 namespace AplicacaoPoo.Estrutural.Windows
 {
-    public partial class FormPrincipal : Form
+    public partial class FrmPrincipal : Form
     {
-        public FormPrincipal()
+        public FrmPrincipal()
         {
             InitializeComponent();
         }
@@ -15,7 +15,7 @@ namespace AplicacaoPoo.Estrutural.Windows
 
         private void btnComissao_Click(object sender, EventArgs e)
         {
-            var form = new frmComissao();
+            var form = new FrmComissaoDeVenda();
             form.Show();
         }
     }
