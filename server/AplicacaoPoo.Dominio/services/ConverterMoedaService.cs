@@ -8,9 +8,9 @@ namespace AplicacaoPoo.Dominio.services
 {
     public class ConverterMoedaService
     {
-        decimal CotacaoDolar = 5.12m;
-        decimal CotacaoLibra = 6.15m;
-        decimal CotacaoEuro = 6.0m;
+        decimal CotacaoDolar = 5.41m;
+        decimal CotacaoLibra = 5.76m;
+        decimal CotacaoEuro = 5.19m;
         public decimal ConverterDolarEmReal(decimal valor)
         {
             return valor * CotacaoDolar;

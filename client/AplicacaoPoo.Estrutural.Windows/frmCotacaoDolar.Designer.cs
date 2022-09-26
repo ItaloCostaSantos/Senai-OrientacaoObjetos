@@ -40,20 +40,20 @@
             this.txtValorEmDolar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorEmDolar.Font = new System.Drawing.Font("NSimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtValorEmDolar.ForeColor = System.Drawing.Color.Gray;
-            this.txtValorEmDolar.Location = new System.Drawing.Point(21, 104);
+            this.txtValorEmDolar.Location = new System.Drawing.Point(21, 118);
             this.txtValorEmDolar.Name = "txtValorEmDolar";
-            this.txtValorEmDolar.Size = new System.Drawing.Size(150, 19);
+            this.txtValorEmDolar.PlaceholderText = "informe o valor";
+            this.txtValorEmDolar.Size = new System.Drawing.Size(150, 21);
             this.txtValorEmDolar.TabIndex = 3;
-            this.txtValorEmDolar.Text = "valor em dolar";
             this.txtValorEmDolar.TextChanged += new System.EventHandler(this.txtValorEmDolar_TextChanged);
             // 
             // lblPrimeiroValor
             // 
             this.lblPrimeiroValor.AutoSize = true;
             this.lblPrimeiroValor.ForeColor = System.Drawing.Color.White;
-            this.lblPrimeiroValor.Location = new System.Drawing.Point(21, 22);
+            this.lblPrimeiroValor.Location = new System.Drawing.Point(21, 25);
             this.lblPrimeiroValor.Name = "lblPrimeiroValor";
-            this.lblPrimeiroValor.Size = new System.Drawing.Size(0, 15);
+            this.lblPrimeiroValor.Size = new System.Drawing.Size(0, 17);
             this.lblPrimeiroValor.TabIndex = 5;
             // 
             // lblSegundoValor
@@ -61,32 +61,34 @@
             this.lblSegundoValor.AutoSize = true;
             this.lblSegundoValor.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSegundoValor.ForeColor = System.Drawing.Color.White;
-            this.lblSegundoValor.Location = new System.Drawing.Point(18, 52);
+            this.lblSegundoValor.Location = new System.Drawing.Point(18, 59);
             this.lblSegundoValor.Name = "lblSegundoValor";
-            this.lblSegundoValor.Size = new System.Drawing.Size(0, 30);
+            this.lblSegundoValor.Size = new System.Drawing.Size(0, 32);
             this.lblSegundoValor.TabIndex = 6;
             // 
             // cmbMoedas
             // 
             this.cmbMoedas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cmbMoedas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMoedas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbMoedas.ForeColor = System.Drawing.Color.Yellow;
             this.cmbMoedas.FormattingEnabled = true;
             this.cmbMoedas.Items.AddRange(new object[] {
-            "Dolar",
+            "Dólar",
             "Euro",
             "Libra"});
-            this.cmbMoedas.Location = new System.Drawing.Point(210, 104);
+            this.cmbMoedas.Location = new System.Drawing.Point(210, 118);
             this.cmbMoedas.Name = "cmbMoedas";
-            this.cmbMoedas.Size = new System.Drawing.Size(121, 23);
+            this.cmbMoedas.Size = new System.Drawing.Size(121, 25);
             this.cmbMoedas.TabIndex = 7;
+            this.cmbMoedas.SelectedIndexChanged += new System.EventHandler(this.cmbMoedas_SelectedIndexChanged);
             // 
             // frmCotacaoDolar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(362, 205);
+            this.ClientSize = new System.Drawing.Size(362, 207);
             this.Controls.Add(this.cmbMoedas);
             this.Controls.Add(this.lblSegundoValor);
             this.Controls.Add(this.lblPrimeiroValor);
