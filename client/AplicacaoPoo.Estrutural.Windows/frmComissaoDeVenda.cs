@@ -1,4 +1,5 @@
 ﻿using AplicacaoPoo.Dominio.Helpers;
+using AplicacaoPoo.Dominio.services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +26,15 @@ namespace AplicacaoPoo.Estrutural.Windows
             list.Add(VendedorHelper.Vendedor04);
             cmbNomeVendedor.DataSource = list;
             cmbNomeVendedor.SelectedIndex = 0;
+            decimal quantPeca;
+
+            var listaPecas = new List<string>();
+            /*listaPecas.Add(SelecionaPecaService.SelecionaProduto01);
+            listaPecas.Add(SelecionaPecaService.SelecionaProduto02);
+            listaPecas.Add(SelecionaPecaService.SelecionaProduto03);
+            listaPecas.Add(SelecionaPecaService.SelecionaProduto04);*/
+            cmbSelecaoPeca.DataSource = listaPecas;
+            cmbSelecaoPeca.SelectedIndex = 0;
         }
 
         private void btnCalcularComissao_Click(object sender, EventArgs e)
