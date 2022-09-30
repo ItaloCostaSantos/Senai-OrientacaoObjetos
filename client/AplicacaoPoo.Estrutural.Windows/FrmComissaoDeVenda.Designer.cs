@@ -29,110 +29,26 @@
         private void InitializeComponent()
         {
             this.lblIdVendedor = new System.Windows.Forms.Label();
-            this.txtIdVendedor = new System.Windows.Forms.TextBox();
-            this.lblCodigoPeca = new System.Windows.Forms.Label();
-            this.txtCodigoPeca = new System.Windows.Forms.TextBox();
-            this.txtPrecoUnitPeca = new System.Windows.Forms.TextBox();
-            this.lblPrecoUnitPeca = new System.Windows.Forms.Label();
-            this.gbxPeca = new System.Windows.Forms.GroupBox();
-            this.txtQuantVendaPeca = new System.Windows.Forms.TextBox();
-            this.lblQuantVendaPeca = new System.Windows.Forms.Label();
             this.btnCalcularComissao = new System.Windows.Forms.Button();
-            this.lblValorComissao = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.gbxPeca.SuspendLayout();
+            this.cmbSelecaoPeca = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblSelecaoPeca = new System.Windows.Forms.Label();
+            this.txtQuantPeca = new System.Windows.Forms.TextBox();
+            this.lblInformaQuantPeca = new System.Windows.Forms.Label();
+            this.cmbNomeVendedor = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblIdVendedor
             // 
             this.lblIdVendedor.AutoSize = true;
-            this.lblIdVendedor.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIdVendedor.Font = new System.Drawing.Font("Arial Black", 13.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblIdVendedor.ForeColor = System.Drawing.Color.White;
-            this.lblIdVendedor.Location = new System.Drawing.Point(12, 13);
+            this.lblIdVendedor.Location = new System.Drawing.Point(154, 17);
             this.lblIdVendedor.Name = "lblIdVendedor";
-            this.lblIdVendedor.Size = new System.Drawing.Size(123, 19);
+            this.lblIdVendedor.Size = new System.Drawing.Size(198, 26);
             this.lblIdVendedor.TabIndex = 0;
-            this.lblIdVendedor.Text = "ID do Vendedor";
-            // 
-            // txtIdVendedor
-            // 
-            this.txtIdVendedor.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIdVendedor.Location = new System.Drawing.Point(154, 11);
-            this.txtIdVendedor.Name = "txtIdVendedor";
-            this.txtIdVendedor.Size = new System.Drawing.Size(280, 23);
-            this.txtIdVendedor.TabIndex = 1;
-            // 
-            // lblCodigoPeca
-            // 
-            this.lblCodigoPeca.AutoSize = true;
-            this.lblCodigoPeca.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCodigoPeca.ForeColor = System.Drawing.Color.White;
-            this.lblCodigoPeca.Location = new System.Drawing.Point(6, 34);
-            this.lblCodigoPeca.Name = "lblCodigoPeca";
-            this.lblCodigoPeca.Size = new System.Drawing.Size(61, 19);
-            this.lblCodigoPeca.TabIndex = 2;
-            this.lblCodigoPeca.Text = "Código";
-            // 
-            // txtCodigoPeca
-            // 
-            this.txtCodigoPeca.Location = new System.Drawing.Point(207, 32);
-            this.txtCodigoPeca.Name = "txtCodigoPeca";
-            this.txtCodigoPeca.Size = new System.Drawing.Size(200, 27);
-            this.txtCodigoPeca.TabIndex = 3;
-            // 
-            // txtPrecoUnitPeca
-            // 
-            this.txtPrecoUnitPeca.Location = new System.Drawing.Point(207, 71);
-            this.txtPrecoUnitPeca.Name = "txtPrecoUnitPeca";
-            this.txtPrecoUnitPeca.Size = new System.Drawing.Size(200, 27);
-            this.txtPrecoUnitPeca.TabIndex = 5;
-            this.txtPrecoUnitPeca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecoUnitPeca_KeyPress);
-            // 
-            // lblPrecoUnitPeca
-            // 
-            this.lblPrecoUnitPeca.AutoSize = true;
-            this.lblPrecoUnitPeca.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPrecoUnitPeca.ForeColor = System.Drawing.Color.White;
-            this.lblPrecoUnitPeca.Location = new System.Drawing.Point(6, 74);
-            this.lblPrecoUnitPeca.Name = "lblPrecoUnitPeca";
-            this.lblPrecoUnitPeca.Size = new System.Drawing.Size(140, 19);
-            this.lblPrecoUnitPeca.TabIndex = 4;
-            this.lblPrecoUnitPeca.Text = "Preço unitário R$";
-            // 
-            // gbxPeca
-            // 
-            this.gbxPeca.Controls.Add(this.txtQuantVendaPeca);
-            this.gbxPeca.Controls.Add(this.lblQuantVendaPeca);
-            this.gbxPeca.Controls.Add(this.lblCodigoPeca);
-            this.gbxPeca.Controls.Add(this.txtPrecoUnitPeca);
-            this.gbxPeca.Controls.Add(this.txtCodigoPeca);
-            this.gbxPeca.Controls.Add(this.lblPrecoUnitPeca);
-            this.gbxPeca.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.gbxPeca.ForeColor = System.Drawing.Color.White;
-            this.gbxPeca.Location = new System.Drawing.Point(12, 55);
-            this.gbxPeca.Name = "gbxPeca";
-            this.gbxPeca.Size = new System.Drawing.Size(422, 154);
-            this.gbxPeca.TabIndex = 6;
-            this.gbxPeca.TabStop = false;
-            this.gbxPeca.Text = "Peças";
-            // 
-            // txtQuantVendaPeca
-            // 
-            this.txtQuantVendaPeca.Location = new System.Drawing.Point(207, 112);
-            this.txtQuantVendaPeca.Name = "txtQuantVendaPeca";
-            this.txtQuantVendaPeca.Size = new System.Drawing.Size(200, 27);
-            this.txtQuantVendaPeca.TabIndex = 7;
-            // 
-            // lblQuantVendaPeca
-            // 
-            this.lblQuantVendaPeca.AutoSize = true;
-            this.lblQuantVendaPeca.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblQuantVendaPeca.ForeColor = System.Drawing.Color.White;
-            this.lblQuantVendaPeca.Location = new System.Drawing.Point(6, 115);
-            this.lblQuantVendaPeca.Name = "lblQuantVendaPeca";
-            this.lblQuantVendaPeca.Size = new System.Drawing.Size(160, 19);
-            this.lblQuantVendaPeca.TabIndex = 6;
-            this.lblQuantVendaPeca.Text = "Quantidade Vendida";
+            this.lblIdVendedor.Text = "Nome do Vendedor";
             // 
             // btnCalcularComissao
             // 
@@ -140,51 +56,85 @@
             this.btnCalcularComissao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcularComissao.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCalcularComissao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnCalcularComissao.Location = new System.Drawing.Point(12, 228);
+            this.btnCalcularComissao.Location = new System.Drawing.Point(23, 294);
             this.btnCalcularComissao.Name = "btnCalcularComissao";
-            this.btnCalcularComissao.Size = new System.Drawing.Size(109, 34);
+            this.btnCalcularComissao.Size = new System.Drawing.Size(109, 43);
             this.btnCalcularComissao.TabIndex = 7;
             this.btnCalcularComissao.Text = "Calcular";
             this.btnCalcularComissao.UseVisualStyleBackColor = false;
             this.btnCalcularComissao.Click += new System.EventHandler(this.btnCalcularComissao_Click);
             // 
-            // lblValorComissao
+            // cmbSelecaoPeca
             // 
-            this.lblValorComissao.AutoSize = true;
-            this.lblValorComissao.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblValorComissao.ForeColor = System.Drawing.Color.Goldenrod;
-            this.lblValorComissao.Location = new System.Drawing.Point(320, 235);
-            this.lblValorComissao.Name = "lblValorComissao";
-            this.lblValorComissao.Size = new System.Drawing.Size(0, 19);
-            this.lblValorComissao.TabIndex = 8;
+            this.cmbSelecaoPeca.FormattingEnabled = true;
+            this.cmbSelecaoPeca.Location = new System.Drawing.Point(154, 135);
+            this.cmbSelecaoPeca.Name = "cmbSelecaoPeca";
+            this.cmbSelecaoPeca.Size = new System.Drawing.Size(263, 23);
+            this.cmbSelecaoPeca.TabIndex = 9;
             // 
-            // label1
+            // pictureBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label1.Location = new System.Drawing.Point(160, 235);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 19);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Valor da comissão:";
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(109, 91);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblSelecaoPeca
+            // 
+            this.lblSelecaoPeca.AutoSize = true;
+            this.lblSelecaoPeca.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSelecaoPeca.Location = new System.Drawing.Point(27, 143);
+            this.lblSelecaoPeca.Name = "lblSelecaoPeca";
+            this.lblSelecaoPeca.Size = new System.Drawing.Size(94, 15);
+            this.lblSelecaoPeca.TabIndex = 11;
+            this.lblSelecaoPeca.Text = "Selecione a Peça";
+            // 
+            // txtQuantPeca
+            // 
+            this.txtQuantPeca.Location = new System.Drawing.Point(154, 212);
+            this.txtQuantPeca.Name = "txtQuantPeca";
+            this.txtQuantPeca.Size = new System.Drawing.Size(263, 23);
+            this.txtQuantPeca.TabIndex = 12;
+            // 
+            // lblInformaQuantPeca
+            // 
+            this.lblInformaQuantPeca.AutoSize = true;
+            this.lblInformaQuantPeca.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblInformaQuantPeca.Location = new System.Drawing.Point(23, 212);
+            this.lblInformaQuantPeca.Name = "lblInformaQuantPeca";
+            this.lblInformaQuantPeca.Size = new System.Drawing.Size(124, 15);
+            this.lblInformaQuantPeca.TabIndex = 13;
+            this.lblInformaQuantPeca.Text = "Informe a quantidade ";
+            // 
+            // cmbNomeVendedor
+            // 
+            this.cmbNomeVendedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNomeVendedor.FormattingEnabled = true;
+            this.cmbNomeVendedor.Location = new System.Drawing.Point(154, 63);
+            this.cmbNomeVendedor.Name = "cmbNomeVendedor";
+            this.cmbNomeVendedor.Size = new System.Drawing.Size(263, 23);
+            this.cmbNomeVendedor.TabIndex = 14;
             // 
             // FrmComissaoDeVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(448, 273);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblValorComissao);
+            this.ClientSize = new System.Drawing.Size(448, 349);
+            this.Controls.Add(this.cmbNomeVendedor);
+            this.Controls.Add(this.lblInformaQuantPeca);
+            this.Controls.Add(this.txtQuantPeca);
+            this.Controls.Add(this.lblSelecaoPeca);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.cmbSelecaoPeca);
             this.Controls.Add(this.btnCalcularComissao);
-            this.Controls.Add(this.gbxPeca);
-            this.Controls.Add(this.txtIdVendedor);
             this.Controls.Add(this.lblIdVendedor);
             this.Name = "FrmComissaoDeVenda";
             this.Text = "FrmComissao";
-            this.gbxPeca.ResumeLayout(false);
-            this.gbxPeca.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,16 +143,12 @@
         #endregion
 
         private Label lblIdVendedor;
-        private TextBox txtIdVendedor;
-        private Label lblCodigoPeca;
-        private TextBox txtCodigoPeca;
-        private TextBox txtPrecoUnitPeca;
-        private Label lblPrecoUnitPeca;
-        private GroupBox gbxPeca;
-        private TextBox txtQuantVendaPeca;
-        private Label lblQuantVendaPeca;
         private Button btnCalcularComissao;
-        private Label lblValorComissao;
-        private Label label1;
+        private ComboBox cmbSelecaoPeca;
+        private PictureBox pictureBox1;
+        private Label lblSelecaoPeca;
+        private TextBox txtQuantPeca;
+        private Label lblInformaQuantPeca;
+        private ComboBox cmbNomeVendedor;
     }
 }

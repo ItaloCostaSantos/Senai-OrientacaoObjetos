@@ -5,15 +5,19 @@ namespace AplicacaoPoo.Estrutural.Windows
         public FrmPrincipal()
         {
             InitializeComponent();
-        }
-        private void btnConversor_Click(object sender, EventArgs e)
+        } 
+
+        private void converterEmDolarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new frmCotacaoDolar();
+            form.MdiParent = this;
             form.Show();
         }
-        private void btnComissao_Click(object sender, EventArgs e)
+
+        private void comissionamentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new FrmComissaoDeVenda();
+            form.MdiParent = this;
             form.Show();
         }
     }
