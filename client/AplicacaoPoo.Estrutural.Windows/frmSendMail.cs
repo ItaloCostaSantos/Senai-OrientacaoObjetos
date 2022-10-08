@@ -21,26 +21,39 @@ namespace AplicacaoPoo.Estrutural.Windows
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var mensagem = new MimeMessage();
-            mensagem.From.Add(new MailboxAddress(txtNomeCompleto.Text, txtEmail.Text));
-            mensagem.To.Add(new MailboxAddress("Italo", "italosantoscosta07@gmail.com"));
-
-            mensagem.Subject = txtAssunto.Text;
-
-            mensagem.Body = new TextPart("plain")
+            try
             {
-                Text = txtMensagem.Text
-            };
+                button1.Enabled = false;
+                button1.UseWaitCursor = true;
 
-            using (var client = new SmtpClient())
+                var mensagem = new MimeMessage();
+                mensagem.From.Add(new MailboxAddress(txtNomeCompleto.Text, txtEmail.Text));
+                mensagem.To.Add(new MailboxAddress(txtNomeCompleto.Text, txtEmail.Text));
+                mensagem.ReplyTo.Add(new MailboxAddress(txtNomeCompleto.Text, txtEmail.Text));
+
+                mensagem.Subject = txtAssunto.Text;
+
+                mensagem.Body = new TextPart("plain")
+                {
+                    Text = txtMensagem.Text
+                };
+                using (var client = new SmtpClient())
+                {
+                    client.Connect("smtp.gmail.com", 587, false);
+
+                    // Note: only needed if the SMTP server requires authentication
+                    client.Authenticate("user_senai_temp@faceli.edu.br", "senai@2022");
+
+                    client.Send(mensagem);
+                    client.Disconnect(true);                  
+                }
+                button1.Enabled = true;
+                button1.UseWaitCursor = false;
+                MessageBox.Show("mensagem enviada com sucesso");
+            }
+            catch (Exception ex)
             {
-                client.Connect("smtp.gmail.com", 587, false);
-
-                // Note: only needed if the SMTP server requires authentication
-                client.Authenticate("italo.santos10@aluno.senai.br", "aluno10100");
-
-                client.Send(mensagem);
-                client.Disconnect(true);
+                MessageBox.Show(ex.Message);
             }
         }
     }
